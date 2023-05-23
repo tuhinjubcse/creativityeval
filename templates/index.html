@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      h2 {text-align: center;}
+    </style>
+
+    <title>Four Dimensions of Creativity</title>
+  </head>
+  <body>
+    <form method="post">
+    <input type="hidden" id="functionality" name="functionality" value="none">
+    <div class="container">
+      <h2> Empirical Measure of Creativity </h2><br>
+      <p>  We are computer science researchers interested in measuring creativity in Short Fiction/Non-Fiction based on four scales below. Your responsibility is to succinctly write ways in which you measure these in any creative piece of text. When framing your response please think emprically. Avoid using abstract/vague terms</p><br><br><br><br>
+      <div class="row">
+        <div class="col">
+          <h2 class="text-center">Fluency</h2><br>
+          <textarea id="fluency1" name="fluency1" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="fluency2" name="fluency2" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="fluency3" name="fluency3" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="fluency4" name="fluency4" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+          <textarea id="fluency5" name="fluency5" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+        </div>
+        <div class="col">
+          <h2 class="text-center">Flexibility</h2><br>
+           <textarea id="fluency1" name="fluency1" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="fluency2" name="fluency2" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="fluency3" name="fluency3" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="fluency4" name="fluency4" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+          <textarea id="fluency5" name="fluency5" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+        </div>
+        <div class="col">
+          <h2 class="text-center">Originality</h2><br>
+          <textarea id="originality1" name="originality1" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="originality2" name="originality2" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="originality3" name="originality3" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="originality4" name="originality4" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+          <textarea id="originality5" name="originality5" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+        </div>
+        <div class="col">
+          <h2 class="text-center">Elaboration</h2><br>
+          <textarea id="elaboration1" name="elaboration1" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="elaboration2" name="elaboration2" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="elaboration3" name="elaboration3" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea>
+          <textarea id="elaboration4" name="elaboration4" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+          <textarea id="elaboration5" name="elaboration5" style="width: 80%; height: 10%; overflow-y: auto;overflow-x: auto;"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+  <div class="text-center">
+    <textarea id="name" name="name" placeholder="Enter your name without space" style="width: 20%; height: 10%; overflow-y: auto;overflow-x: auto;" required></textarea><br>
+    <button type="submit" class="btn btn-primary mt-3" onclick="updateFunctionality(this)">Submit</button>
+   </div>
+</form>
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        function updateFunctionality(element) {
+            let currentFunc = document.getElementById('functionality').value;
+            let currentID = element.id;
+            document.getElementById('functionality').value = currentID 
+            }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
